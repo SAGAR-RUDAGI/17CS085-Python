@@ -1,8 +1,8 @@
 class Student:
 	def __init__(self):
-		self.id = None
-		self.age = None
-		self.marks = None
+		self.__id = None
+		self.__age = None
+		self.__marks = None
 
 	def validate_marks(self):
 		return self.marks >= 0 and self.marks <=100
