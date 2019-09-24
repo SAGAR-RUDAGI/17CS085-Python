@@ -26,7 +26,14 @@ class Student:
 		print("AGE : ",self.__age)
 		print("MARKS : ",self.__marks)
 
-S = Student()
-S.set()
-S.get()
-print(S.check_qualifications())
+n = int(input("No of students : "))
+studs = []
+for i in range(n):
+	studs.append(Student())
+for i in range(n):
+	studs[i].set()
+	studs[i].get()
+	print(studs[i].check_qualifications())
+	print()
+	print()
+
