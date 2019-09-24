@@ -5,26 +5,26 @@ class Student:
 		self.__marks = None
 
 	def validate_marks(self):
-		return self.marks >= 0 and self.marks <=100
+		return self.__marks >= 0 and self.__marks <=100
 
 	def validate_age(self):
-		return self.age>20
+		return self.__age>20
 
 	def check_qualifications(self):
 		if(self.validate_marks() and self.validate_age()):
-			return self.marks>=65
+			return self.__marks>=65
 		else:
 			return False
 
 	def set(self):
-		self.id = input("ID {example:1BM17CS000} : ")
-		self.age = int(input("AGE : "))
-		self.marks = float(input("Marks : "))
+		self.__id = input("ID {example:1BM17CS000} : ")
+		self.__age = int(input("AGE : "))
+		self.__marks = float(input("Marks : "))
 
 	def get(self):
-		print("ID : ",self.id)
-		print("AGE : ",self.age)
-		print("MARKS : ",self.marks)
+		print("ID : ",self.__id)
+		print("AGE : ",self.__age)
+		print("MARKS : ",self.__marks)
 
 S = Student()
 S.set()
