@@ -33,7 +33,7 @@ for i in range(n):
 for i in range(n):
 	studs[i].set()
 	studs[i].get()
-	print(studs[i].check_qualifications())
+	print(["Not qualified","Qualified"][studs[i].check_qualifications()])
 	print()
 	print()
 
